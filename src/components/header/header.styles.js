@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { verticalScale, scale } from "react-native-size-matters";
 
 export const Container = styled.View`
-  height: ${verticalScale(100)}px;
+  height: ${verticalScale(115)}px;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.primary};
   flex-direction: row;

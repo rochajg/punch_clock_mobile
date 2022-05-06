@@ -7,7 +7,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <SafeAreaView style={{ flex: 1 }}>
-        <StatusBar  style="auto" />
+        <StatusBar style="auto" />
         <MainNavigator />
       </SafeAreaView>
     </ThemeProvider>

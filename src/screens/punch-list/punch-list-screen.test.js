@@ -1,4 +1,4 @@
-import { fireEvent, render } from "../../test/test-utils";
+import { fireEvent, render } from "@test/test-utils";
 import usePunches from "./hooks/use-punches";
 import PunchListScreen from "./punch-list-screen";
 

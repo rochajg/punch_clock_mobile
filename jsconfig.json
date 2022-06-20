@@ -20,9 +20,12 @@
       "@utils/*": [
         "src/utils/*",
       ],
+      "@store/*": [
+        "src/store/*",
+      ],
       "@assets/*": [
         "./assets/*",
-      ],
+      ]
     }
   }
 }

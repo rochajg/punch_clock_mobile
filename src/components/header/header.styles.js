@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 import { verticalScale, scale, moderateScale } from "react-native-size-matters";
-import { Platform } from "react-native";
+import { Platform, TouchableOpacity } from "react-native";
 
 export const Container = styled.View`
   height: ${Platform.OS === "web" ? verticalScale(90) : verticalScale(130)}px;
@@ -12,6 +12,10 @@ export const Container = styled.View`
   padding: ${({ theme }) => theme.spacing.m}px;
 `;
 
+export const BackButton = styled(TouchableOpacity)`
+  opacity: ${props => props.disabled ? 0 : 1};
+`
+
 export const LogoContainer = styled.View`
   flex-direction: row;
   align-items: center;
@@ -21,6 +25,10 @@ export const Logo = styled.Image`
   width: ${moderateScale(50)}px;
   height: ${moderateScale(45)}px;
 `;
+
+export const SettingsButton = styled(TouchableOpacity)`
+  opacity: ${props => props.disabled ? 0 : 1};
+`
 
 export const SettingsIcon = styled.Image`
   width: ${moderateScale(25)}px;
